@@ -20,6 +20,7 @@ function Movies({handleAddToWatchlist , handleRemovefromWatchlist,watchlist}) {
     setpageNo(pageNo + 1)       // this function handles when next page button is clicked it moves to next page
   }
 
+  const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
   useEffect(() => {
     axios
